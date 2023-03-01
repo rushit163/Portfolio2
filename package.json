@@ -6,9 +6,11 @@
     "start": "next start"
   },
   "dependencies": {
+    "framer-motion": "^10.0.0",
     "next": "latest",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "typewriter-effect": "^2.19.0"
   },
   "devDependencies": {
     "@types/node": "18.11.3",
