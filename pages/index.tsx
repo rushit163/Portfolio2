@@ -16,7 +16,7 @@ const Home: NextPage = () => {
     <meta property="og:title" content="My page title" key="title" />
     </Head>
     <div className="grid grid-cols-8 gap-4 bg-cover bg-my_bg_image h-[100vh] w-[100vw]">
-      <div className='col-span-1 width-25vw overflow-y-hidden' > 
+      <div className='col-span-1 overflow-y-hidden h-[100vh] '> 
         <Skilss/>
       </div>  
       <div className='flex flex-col align-center col-span-6'>
