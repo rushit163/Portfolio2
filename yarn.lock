@@ -45,6 +45,60 @@
     "@nodelib/fs.scandir" "2.1.5"
     "fastq" "^1.6.0"
 
+"@react-spring/animated@~9.7.1":
+  "integrity" "sha512-EX5KAD9y7sD43TnLeTNG1MgUVpuRO1YaSJRPawHNRgUWYfILge3s85anny4S4eTJGpdp5OoFV2kx9fsfeo0qsw=="
+  "resolved" "https://registry.npmjs.org/@react-spring/animated/-/animated-9.7.1.tgz"
+  "version" "9.7.1"
+  dependencies:
+    "@react-spring/shared" "~9.7.1"
+    "@react-spring/types" "~9.7.1"
+
+"@react-spring/core@~9.7.1":
+  "integrity" "sha512-8K9/FaRn5VvMa24mbwYxwkALnAAyMRdmQXrARZLcBW2vxLJ6uw9Cy3d06Z8M12kEqF2bDlccaCSDsn2bSz+Q4A=="
+  "resolved" "https://registry.npmjs.org/@react-spring/core/-/core-9.7.1.tgz"
+  "version" "9.7.1"
+  dependencies:
+    "@react-spring/animated" "~9.7.1"
+    "@react-spring/rafz" "~9.7.1"
+    "@react-spring/shared" "~9.7.1"
+    "@react-spring/types" "~9.7.1"
+
+"@react-spring/parallax@^9.7.1":
+  "integrity" "sha512-1wBgDYaewB8CHdMWa2O3C2Cfvq2mt+neQLZz3+zHTH0CRUlbzC8Hsm78BCDiK8I1QzpLCtgwvv2rYAJchQuZ1A=="
+  "resolved" "https://registry.npmjs.org/@react-spring/parallax/-/parallax-9.7.1.tgz"
+  "version" "9.7.1"
+  dependencies:
+    "@react-spring/shared" "~9.7.1"
+    "@react-spring/web" "~9.7.1"
+
+"@react-spring/rafz@~9.7.1":
+  "integrity" "sha512-JSsrRfbEJvuE3w/uvU3mCTuWwpQcBXkwoW14lBgzK9XJhuxmscGo59AgJUpFkGOiGAVXFBGB+nEXtSinFsopgw=="
+  "resolved" "https://registry.npmjs.org/@react-spring/rafz/-/rafz-9.7.1.tgz"
+  "version" "9.7.1"
+
+"@react-spring/shared@~9.7.1":
+  "integrity" "sha512-R2kZ+VOO6IBeIAYTIA3C1XZ0ZVg/dDP5FKtWaY8k5akMer9iqf5H9BU0jyt3Qtxn0qQY7whQdf6MTcWtKeaawg=="
+  "resolved" "https://registry.npmjs.org/@react-spring/shared/-/shared-9.7.1.tgz"
+  "version" "9.7.1"
+  dependencies:
+    "@react-spring/rafz" "~9.7.1"
+    "@react-spring/types" "~9.7.1"
+
+"@react-spring/types@~9.7.1":
+  "integrity" "sha512-yBcyfKUeZv9wf/ZFrQszvhSPuDx6Py6yMJzpMnS+zxcZmhXPeOCKZSHwqrUz1WxvuRckUhlgb7eNI/x5e1e8CA=="
+  "resolved" "https://registry.npmjs.org/@react-spring/types/-/types-9.7.1.tgz"
+  "version" "9.7.1"
+
+"@react-spring/web@~9.7.1":
+  "integrity" "sha512-6uUE5MyKqdrJnIJqlDN/AXf3i8PjOQzUuT26nkpsYxUGOk7c+vZVPcfrExLSoKzTb9kF0i66DcqzO5fXz/Z1AA=="
+  "resolved" "https://registry.npmjs.org/@react-spring/web/-/web-9.7.1.tgz"
+  "version" "9.7.1"
+  dependencies:
+    "@react-spring/animated" "~9.7.1"
+    "@react-spring/core" "~9.7.1"
+    "@react-spring/shared" "~9.7.1"
+    "@react-spring/types" "~9.7.1"
+
 "@swc/helpers@0.4.14":
   "integrity" "sha512-4C7nX/dvpzB7za4Ql9K81xK3HPxCpHMgwTZVyf+9JQ6VUbn9jjZVN7/Nkdz/Ugzs2CSjqnL/UPXroiVBVHUWUw=="
   "resolved" "https://registry.npmjs.org/@swc/helpers/-/helpers-0.4.14.tgz"
@@ -148,7 +202,7 @@
   dependencies:
     "fill-range" "^7.0.1"
 
-"browserslist@^4.21.4", "browserslist@>= 4.21.0":
+"browserslist@^4.21.4":
   "integrity" "sha512-tUkiguQGW7S3IhB7N+c2MV/HZPSCPAAiYBZXLsBhFB/PCy6ZKKsZrmBayHV9fdGV/ARIfJ14NkxKzRDjvp7L6w=="
   "resolved" "https://registry.npmjs.org/browserslist/-/browserslist-4.21.5.tgz"
   "version" "4.21.5"
@@ -497,7 +551,7 @@
   "resolved" "https://registry.npmjs.org/postcss-value-parser/-/postcss-value-parser-4.2.0.tgz"
   "version" "4.2.0"
 
-"postcss@^8.0.0", "postcss@^8.0.9", "postcss@^8.1.0", "postcss@^8.2.14", "postcss@^8.4.18", "postcss@^8.4.21", "postcss@>=8.0.9":
+"postcss@^8.0.9", "postcss@^8.4.18":
   "integrity" "sha512-tP7u/Sn/dVxK2NnruI4H9BG+x+Wxz6oeZ1cJ8P6G/PZY0IKk4k/63TDsQf2kQq3+qoJeLm2kIBUNlZe3zgb4Zg=="
   "resolved" "https://registry.npmjs.org/postcss/-/postcss-8.4.21.tgz"
   "version" "8.4.21"
@@ -541,7 +595,7 @@
   dependencies:
     "performance-now" "^2.1.0"
 
-"react-dom@^17.x || ^18.x", "react-dom@^18.0.0", "react-dom@^18.2.0", "react-dom@18.2.0":
+"react-dom@18.2.0":
   "integrity" "sha512-6IMTriUmvsjHUjNtEDudZfuDQUoWXVxKHhlEGSk81n4YFS+r/Kl99wXiwlVXtPBtJenozv2P+hxDsw9eA7Xo6g=="
   "resolved" "https://registry.npmjs.org/react-dom/-/react-dom-18.2.0.tgz"
   "version" "18.2.0"
@@ -554,7 +608,7 @@
   "resolved" "https://registry.npmjs.org/react-is/-/react-is-16.13.1.tgz"
   "version" "16.13.1"
 
-"react@^17.x || ^18.x", "react@^18.0.0", "react@^18.2.0", "react@>= 16.8.0 || 17.x.x || ^18.0.0-0", "react@18.2.0":
+"react@18.2.0":
   "integrity" "sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ=="
   "resolved" "https://registry.npmjs.org/react/-/react-18.2.0.tgz"
   "version" "18.2.0"
