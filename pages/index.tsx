@@ -16,7 +16,7 @@ const Home: NextPage = () => {
       <About/>
     </ParallaxLayer>
     <ParallaxLayer  offset={0.9999} speed={1} sticky={{ start: 1, end: 0 }}>
-      <Skills/>
+    <Skills/>
     </ParallaxLayer>
     </Parallax>
   </>
