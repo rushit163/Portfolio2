@@ -26,7 +26,7 @@ const About = () => {
           <div className='self-begin flex font-bold lg:text-5xl md:text-4xl sm:text-2xl text-sky-100'>I'm a&nbsp;<span className='text-red-300 typewritter'>{Typeeffect2()}</span>
           </div>
            <div className='self-begin flex font-medium lg:text-l md:text-sm sm:text-sm  my-2 w-5/6'>
-          Undergraduate in Computer Science from India. Learning the ins and outs of web development currently.But I'm also exploring AI/ML development.
+            Undergraduate Student of Computer Science from India. Learning the ins and outs of web development currently,I'm Good at Frontend Development.But I'm also exploring AI/ML development.
           </div>
         </div> 
         </div>
