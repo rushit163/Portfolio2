@@ -1,7 +1,3 @@
-/**
- * Index Page - Skills Section
- */
-
 import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
@@ -14,7 +10,6 @@ const Skills = () => {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.5, type: "spring" }}
       className="my-32 mb-20 w-full overflow-x-clip lg:mb-52 "
-
     >
       <div className="animate-marquee whitespace-nowrap ">
           {SKILLS.map((skill) => (
