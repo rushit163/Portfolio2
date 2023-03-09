@@ -25,7 +25,7 @@ const Navbar = () => {
     
     <>
     <nav className={`flex flex-row item-center justify-center bg-transperant   fixed w-full z-20 left-0" id='navbar`}>
-        <div >
+        <div className=' rounded '>
             <ul className="flex flex-row item-center justify-center  mt-4 rounded-lg ">
             <li>
                 <a href="#" className="text-l lg:text-2xl px-2 font-bold lg:px-5 md:px-3 sm:px-2  text-slate-400  hover:text-white">Home</a>
