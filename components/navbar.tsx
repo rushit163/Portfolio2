@@ -24,20 +24,20 @@ const Navbar = () => {
   return (
     
     <>
-    <nav className={`flex flex-row item-center justify-center bg-transperant px-2  fixed w-full z-20 left-0" id='navbar`}>
-        <div className=" w-full">
-            <ul className="flex flex-row item-center justify-center p-4 mt-4 rounded-lg  ">
+    <nav className={`flex flex-row item-center justify-center bg-transperant   fixed w-full z-20 left-0" id='navbar`}>
+        <div >
+            <ul className="flex flex-row item-center justify-center  mt-4 rounded-lg ">
             <li>
-                <a href="#" className=" py-2 pl-3 text-gray-700  rounded dark:text-white">Home</a>
+                <a href="#" className="text-l lg:text-2xl px-2 font-bold lg:px-5 md:px-3 sm:px-2  text-slate-400  hover:text-white">Home</a>
             </li>
             <li>
-                <a href="#" className=" py-2 pl-3 text-gray-700  rounded dark:text-white">About</a>
+                <a href="#" className="text-l lg:text-2xl px-2 font-bold lg:px-5  md:px-3 sm:px-2  text-slate-400  hover:text-white">About</a>
             </li>
             <li>
-                <a href="#" className=" py-2 pl-3 text-gray-700  rounded dark:text-white">Services</a>
+                <a href="#" className="text-l lg:text-2xl font-bold lg:px-5 md:px-3 sm:px-2  text-slate-400  hover:text-white">Services</a>
             </li>
             <li>
-                <a href="#" className=" py-2 pl-3 text-gray-700  rounded dark:text-white">Contact</a>
+                <a href="#" className="text-l lg:text-2xl px-2 font-bold lg:px-5  md:px-3 sm:px-2 text-slate-400  hover:text-white">Contact</a>
             </li>
             </ul>
         </div>
