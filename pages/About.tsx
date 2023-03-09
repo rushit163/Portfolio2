@@ -11,12 +11,12 @@ const About = () => {
         <Skilss/>
       </div>  
       <div className='flex flex-col align-center col-span-6'>
-        <div className="flex justify-center">
+        {/* <div className="flex justify-center sticky">
           <Link href='/aboutme'><p className="font-bold  text-2xl mx-4 my-3 text-slate-400 rounded-lg hover:text-slate-50">About Me</p></Link>
           <Link href='/project'><p className="font-bold text-2xl  mx-4 my-3 text-slate-400 rounded-lg hover:text-slate-50">Project</p></Link>
           <Link href='/contactme'><p className="font-bold  text-2xl mx-4 my-3 text-slate-400 rounded-lg hover:text-slate-50">Skills</p></Link>
           <Link href='/contactme'><p className="font-bold  text-2xl mx-4 my-3 text-slate-400 rounded-lg hover:text-slate-50">Contact Me</p></Link>
-        </div>
+        </div> */}
         <div className='flex flex-col justify-center lg:mx-40 lg:my-40 md:mx-20 md:my-20 sm:mx-20 sm:my-20'>
           <div className='self-begin font-bold lg:text-5xl md:text-4xl sm:text-2xl text-blue-900'>Hey, I'm</div>
           <div className='self-begin lg:text-8xl md:text-7xl sm:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-b from-blue-900 to-white-900 '

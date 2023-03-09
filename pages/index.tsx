@@ -3,6 +3,7 @@ import Head from 'next/head'
 import About from './About'
 import Skills from './Skills'
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
+import Navbar from '../components/navbar';
 //marquee effect
 const Home: NextPage = () => {
   return (
@@ -11,6 +12,7 @@ const Home: NextPage = () => {
     <title>Rushit Patel</title>
     <meta property="og:title" content="My page title" key="title" />
     </Head>
+    <Navbar/>
     <Parallax pages={2.5}>
     <ParallaxLayer  offset={0} speed={1} sticky={{ start: 0, end: 1 }}>
       <About/>
