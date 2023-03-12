@@ -1,43 +1,23 @@
 import React,{useState, useEffect} from 'react'
-
+import { useScrollDirection } from './useScroll';
 const Navbar = () => {
-    const [prevScrollPos, setPrevScrollPos] = useState(0);
-    const [visible, setVisible] = useState(true)
-    
-    const handleScroll = () => {
-        const currentScrollPos = window.scrollY
-    
-        if(currentScrollPos > prevScrollPos){
-            setVisible(false)
-        }else{
-            setVisible(true)
-        }
-    
-        setPrevScrollPos(currentScrollPos)
-    }
-    
-    useEffect( () => {
-        window.addEventListener('scroll', handleScroll);
-    
-        return () => window.removeEventListener('scroll', handleScroll)
-    })
+    const scrollDirection = useScrollDirection(); 
   return (
-    
     <>
-    <nav className={`flex flex-row item-center justify-center bg-transperant   fixed w-full z-20 left-0" id='navbar`}>
-        <div className=' rounded '>
-            <ul className="flex flex-row item-center justify-center  mt-4 rounded-lg ">
+    <nav className={`flex flex-row item-center justify-center bg-transperant  w-full  fixed ${ scrollDirection === "down" ? "-top-20" : "top-0"}  z-20 `}>
+        <div className='bg-white rounded bg-opacity-50 rounded-t-none'>
+            <ul className="flex flex-row item-center justify-center  mt-2 mb-2 rounded-lg ">
             <li>
-                <a href="#" className="text-l lg:text-2xl px-2 font-bold lg:px-5 md:px-3 sm:px-2  text-slate-400  hover:text-white">Home</a>
+                <a href="#" className="text-l lg:text-2xl px-2 font-semibold lg:px-5 md:px-3 sm:px-2  text-slate-300  hover:text-white">Home</a>
             </li>
             <li>
-                <a href="#" className="text-l lg:text-2xl px-2 font-bold lg:px-5  md:px-3 sm:px-2  text-slate-400  hover:text-white">About</a>
+                <a href="#" className="text-l lg:text-2xl px-2 font-semibold lg:px-5  md:px-3 sm:px-2  text-slate-300  hover:text-white">About</a>
             </li>
             <li>
-                <a href="#" className="text-l lg:text-2xl font-bold lg:px-5 md:px-3 sm:px-2  text-slate-400  hover:text-white">Services</a>
+                <a href="#" className="text-l lg:text-2xl font-semibold lg:px-5 md:px-3 sm:px-2  text-slate-300  hover:text-white">Projects</a>
             </li>
             <li>
-                <a href="#" className="text-l lg:text-2xl px-2 font-bold lg:px-5  md:px-3 sm:px-2 text-slate-400  hover:text-white">Contact</a>
+                <a href="#" className="text-l lg:text-2xl px-2 font-semibold lg:px-5  md:px-3 sm:px-2 text-slate-300  hover:text-white">Contact</a>
             </li>
             </ul>
         </div>
