@@ -23,17 +23,31 @@ const Home: NextPage = () => {
       handleResize();
       return () => window.removeEventListener("resize", handleResize);
     }, []); 
-    return windowSize.width;
+    return windowSize;
   }
   let width = useWindowSize();
-  let start1 = 2
-  let end1 = 3
-  let start2 = 3
-  let end2 = 4
-  if(width>=1024){
-    start2 = start1
-    end2 = end1
+  // const [size , setSize] = useState({
+  //   start:2,
+  //   end : 3
+  // })
+
+  let start = 2
+  let end = 3
+  if(width.width < 1024){
+    start = 3
+    end = 4
   }
+  // useEffect(()=>{
+  //   console.log(width.width)
+  //   console.log(size.start, size.end)
+  //   if(width.width<=1024){
+  //     setSize({
+  //       start : 3,
+  //       end : 4
+  //     })
+  //   }
+  // },[width.width])
+  // console.log(size.start, size.end)
   return (
     <>
     <Head>
@@ -41,22 +55,23 @@ const Home: NextPage = () => {
     <meta property="og:title" content="My page title" key="title" />
     </Head>
     <Navbar/>
-    <Parallax pages={2.5}>
-    <ParallaxLayer  id="hero" offset={0} speed={1} sticky={{ start: 0, end: 1 }}>
+    <Parallax pages={2}>
+    <ParallaxLayer  id="hero" offset={0} speed={0.5} sticky={{ start: 0, end: 1 }}>
       <About/>
     </ParallaxLayer>
-    <ParallaxLayer  id="bounties" offset={0.9999} speed={1} sticky={{start: 1, end: 2}}>
+    <ParallaxLayer  id="bounties" offset={0.9999} speed={0.5} sticky={{start: 1, end: 2}}>
       <Skills/>
     </ParallaxLayer>
-    <ParallaxLayer  id="leaderboard" offset={0.9999} speed={1} sticky={{ start: start1, end: end1 }}>
+    <ParallaxLayer  id="leaderboard" offset={0.9999} speed={0.5} sticky={{ start: 2, end: 3}}>
       <div className='h-[100vh] lg:hidden bg-black mb-3'>
         <Techs/>
       </div>
     </ParallaxLayer>
-    <ParallaxLayer  id="leaderboard" offset={0.99999} speed={1} sticky={{ start: start2, end: end2 }}>
+    <ParallaxLayer  id="leaderboard" offset={0.9999} speed={0.5} sticky={{ start: start, end: end }}>
       <Demo/>
     </ParallaxLayer>
     </Parallax>
+
   </>
   );
 }

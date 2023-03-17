@@ -16,6 +16,7 @@ const Skills = () => {
               src={me}
               height={250}
               width={250}
+              alt = "My pic"
             />
             </div>
           </div>
@@ -27,7 +28,7 @@ const Skills = () => {
               
           </div>
       </div>
-      <div className='hidden lg:flex flex-col justify-center align-center w-[50vw] mt-9 pt-4'>
+      <div className='hidden lg:flex flex-col justify-baseline align-center w-[50vw] p-4'>
           <Techs/>
       </div>
     </div>
