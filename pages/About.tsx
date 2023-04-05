@@ -8,8 +8,8 @@ const About = () => {
   return (
     
     <div>
-      <div className="grid grid-cols-8 gap-4 bg-cover bg-my_bg_image h-[100vh] w-[100vw]">
-      <div className='mr-3 col-span-2 md:col-span-2 lg:col-span-1 overflow-y-hidden h-[100vh] '> 
+      <div className="z-0 grid grid-cols-8 gap-4 bg-cover bg-fixed bg-my_bg_image h-[100vh] w-[100vw]">
+      <div className='realtive mr-3 col-span-2 md:col-span-2 lg:col-span-1 overflow-y-hidden h-[100vh] '> 
         <Skilss/>
       </div>  
       <div className='col-span-6 flex flex-col align-center md:col-span-6 lg:col-span-7'>

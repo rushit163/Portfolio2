@@ -43,11 +43,7 @@ const Home: NextPage = () => {
     <meta property="og:title" content="My page title" key="title" />
     </Head>
     <Navbar/>
-    <Parallax pages={1.3} style={{ top: '0', left: '0' }}>
-      <ParallaxLayer offset={0} speed={2.5}>
-        <About/>
-      </ParallaxLayer>
-    </Parallax>
+    <About/>
     <Skills/> 
     
   </div>
