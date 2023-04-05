@@ -1,15 +1,8 @@
-/**
- * Skills Data
- */
-
 export interface Skill {
     name: string;
     image: string;
   }
-  
   type Skills = Skill[];
-  
-  // Skills Container
   const SKILLS: Skills = [
     {
       name: "TypeScript",

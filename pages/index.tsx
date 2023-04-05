@@ -2,10 +2,9 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import About from './About'
 import Skills from './Skills'
-
+import Pagefill from './pagefill'
 import Navbar from '../components/navbar';
-import Demo from './demo';
-import Techs from './techs';
+
 import { useEffect, useState } from 'react';
 import { Parallax, ParallaxLayer } from '@react-spring/parallax'
 const Home: NextPage = () => {
@@ -42,17 +41,12 @@ const Home: NextPage = () => {
     <meta property="og:title" content="My page title" key="title" />
     </Head>
     <Navbar/>
-    <Parallax pages={2} >
-      <ParallaxLayer offset={0}>
+    <Parallax pages={1.3} style={{ top: '0', left: '0' }}>
+      <ParallaxLayer offset={0} speed={2.5}>
         <About/>
       </ParallaxLayer>
     </Parallax>
-    
     <Skills/>
-      <div className='h-[100vh] lg:hidden bg-black mb-3'>
-        <Techs/>
-      </div>
-      <Demo/>
   </div>
   );
 }
