@@ -2,11 +2,13 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import About from './About'
 import Skills from './Skills'
-import Pagefill from './pagefill'
 import Navbar from '../components/navbar';
-
+import Skillset from '../components/Skillset'
+import { Skillsets } from '../data/Skillset';
 import { useEffect, useState } from 'react';
 import { Parallax, ParallaxLayer } from '@react-spring/parallax'
+import SETS from '../data/Skillset';
+import { Skillsettype } from '../data/Skillset';
 const Home: NextPage = () => {
   const [windowSize, setWindowSize] = useState({
     width: 0,
@@ -46,7 +48,8 @@ const Home: NextPage = () => {
         <About/>
       </ParallaxLayer>
     </Parallax>
-    <Skills/>
+    <Skills/> 
+    
   </div>
   );
 }

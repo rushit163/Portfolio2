@@ -1,7 +1,9 @@
 import React from 'react'
 import Image from 'next/image';
 import me from '../public/me.jpeg'
-
+import SETS from '../data/Skillset';
+import { Skillsettype } from '../data/Skillset';
+import Skillset from '../components/Skillset';
 const Skills = () => {
   return (
     
@@ -31,11 +33,10 @@ const Skills = () => {
         <div className='flex flex-row align-center justify-center text-white text-4xl'>
               Things I'm good with
         </div>
-        <div className='flex flex-row align-center justify-center text-white text-xl mx-5 text-justify'>
-              Hello World, I'm Rushit an Undergreaduate Student in SRM university of Scinece and Technology
-              in Chennai, Tamil Nadu. I'm a Lerning web development. 
-              I'm good at Frontend tasks as well as I can make UI/UX designs using Figma.
-              I'm also looking forward to learn AI/ML Technology as my next target. 
+        <div className='flex flex-col align-center justify-center text-white text-xl mx-5 text-justify'>
+        {SETS.map((skill:Skillsettype)=>{
+              return (<Skillset image={skill.image}  desc={skill.desc} Title={skill.Title}  key={skill.Title}/>)
+        })}
           </div>
       </div>
     </div>
