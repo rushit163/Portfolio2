@@ -6,7 +6,7 @@ import { Skillsettype } from '../data/Skillset';
 import Skillset from '../components/Skillset';
 const Skills = () => {
   return (
-    <div className="z-10 top-0 flex flex-col lg:flex-row justify-baseline align-center  max-h-full min-h-[100vh] w-[100vw] bg-slate-900">
+    <div className="z-10 top-0 flex flex-col lg:flex-row justify-baseline align-center  max-h-full min-h-[100vh] w-[100vw] bg-slate-900 p-2">
       <div className='flex flex-col justify-baseline  w-[100vw] lg:w-[50vw] mt-9 pt-4  pb-9 lg:pb-0'>
             <div className='flex flex-row align-center justify-center text-white text-4xl '>
               About Me
