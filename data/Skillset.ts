@@ -9,13 +9,18 @@ export interface Skillsettype {
 export type Skillsets = Skillsettype[];
 const SETS : Skillsets = [
     {
+        desc : "I'm good in making website user friendly design which are nicely interactive and can inhance user experience. Also I've experice for content writing for the website.",
+        image : "front",
+        Title : 'UI/UX and Content Writing for websites'
+    },
+    {
         desc : "I've been working on frontend development from quite a few time and I prefer working on the frontend more than backend I know frameworks like React and Next also libraries like Bootstrap, Tailwind, MaterialUI, Three.js motion, anime.js ect....",
-         image : "front",
+        image : "front",
         Title : 'Frontend Development'
     },
     {
         desc : "I've worked with the Backend development Enough, and I know techs like Mongodb, Mongoose, mySQL, Express.js, Redux Tollkits and more. I'm currently exploring backend more and will get better with time.",
-         image : "back",
+        image : "back",
         Title : 'Backend Development'
     },
     {

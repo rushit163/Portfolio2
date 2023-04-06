@@ -10,7 +10,7 @@ type Props = {
 }
 const Skillset = ({image,desc,Title}:Props ) => {
   return ( 
-    <div className='border-2 min-h-[20vh] rounded flex flex-col bg-slate-900 m-3'>
+    <div className='border-2 min-h-[20vh] rounded flex flex-col bg-zinc-600 m-3'>
         <div className='flex flex-row items-center border-b-2'>
             <div className='self-start p-2 border-r-2 '><Image src={`/${image}.png`} height={40} width={40} alt='FrontEnd'/></div>
             <div className='self-center px-2 text-white text-2xl'>{Title}</div>
