@@ -4,6 +4,7 @@ import front from '../front.png'
 import AI from '../AI.png'
 import Image from 'next/image'  
 type Props = {
+  key : Number,
   image: string,
   desc : string,
   Title : string

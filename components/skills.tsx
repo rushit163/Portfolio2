@@ -12,10 +12,11 @@ const Skills = () => {
       className="my-32 mb-20 w-full overflow-x-clip lg:mb-52 "
     >
       <div className="animate-marquee whitespace-nowrap ">
-          {SKILLS.map((skill) => (
+          {SKILLS.map((skill,index) => (
             <span
               className="block h-[120%] max-w-[60px] mx-5 my-16"
               title={skill.name}
+              key={index}
               >
               <Image
                 src={skill.image}

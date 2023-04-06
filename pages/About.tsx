@@ -1,12 +1,9 @@
 import React from 'react'
-import Link from 'next/link';
 import Typeeffect from '../components/typeeffect';
 import Typeeffect2 from '../components/typeeffect2';
 import Skilss from '../components/skills';
-import { Parallax } from 'react-parallax';
 const About = () => {
   return (
-    
     <div>
       <div className="z-0 grid grid-cols-8 gap-4 bg-cover bg-fixed bg-my_bg_image h-[100vh] w-[100vw]">
       <div className='realtive mr-3 col-span-2 md:col-span-2 lg:col-span-1 overflow-y-hidden h-[100vh] '> 

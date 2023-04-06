@@ -3,7 +3,7 @@ import Head from 'next/head'
 import About from './About'
 import Skills from './Skills'
 import Navbar from '../components/navbar';
-import Projects from './projects';
+import Projects from './Projects';
 const Home: NextPage = () => {
   return (
     <div className='scroll-smooth'>

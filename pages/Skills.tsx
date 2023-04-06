@@ -6,9 +6,8 @@ import { Skillsettype } from '../data/Skillset';
 import Skillset from '../components/Skillset';
 const Skills = () => {
   return (
-    
-    <div className="z-10 top-0 flex flex-col lg:flex-row justify-baseline align-center  max-h-full min-h-[100vh] w-[100vw] bg-slate-900 bg-fixed bg-cover">
-      <div className='flex flex-col justify-baseline  w-[100vw] lg:w-[50vw] mt-9 pt-4 lg:border-r-2 border-b-2 lg:border-b-0 py-5 border-slate-500 pb-9 lg:pb-0'>
+    <div className="z-10 top-0 flex flex-col lg:flex-row justify-baseline align-center  max-h-full min-h-[100vh] w-[100vw] bg-slate-900">
+      <div className='flex flex-col justify-baseline  w-[100vw] lg:w-[50vw] mt-9 pt-4  pb-9 lg:pb-0'>
             <div className='flex flex-row align-center justify-center text-white text-4xl '>
               About Me
             </div>
@@ -44,8 +43,8 @@ const Skills = () => {
               Things I'm good with
         </div>
         <div className='flex flex-col align-center justify-center text-white text-xl mx-5 text-justify'>
-        {SETS.map((skill:Skillsettype)=>{
-              return (<Skillset image={skill.image}  desc={skill.desc} Title={skill.Title}  key={skill.Title}/>)
+        {SETS.map((skill:Skillsettype,index)=>{
+              return (<Skillset image={skill.image}  desc={skill.desc} Title={skill.Title}  key={index}/>)
         })}
           </div>
       </div>
