@@ -6,7 +6,7 @@ import Navbar from '../components/navbar';
 import Projects from './Projects';
 const Home: NextPage = () => {
   return (
-    <div className='scroll-smooth'>
+    <div className='scroll-smooth overflow-hidden'>
     <Head>
       <title>Rushit Patel</title>
       <meta property="og:title" content="My page title" key="title" />

@@ -13,7 +13,7 @@ const SETS : Skillsets = [
         id : '1',
         desc : "I'm good in making website user friendly design which are nicely interactive and can inhance user experience. Also I've experice for content writing for the website.",
         image : "UX",
-        Title : 'UI/UX and Content Writing for websites'
+        Title : 'UI/UX and Content Writing'
     },
     {
         id : '2',
