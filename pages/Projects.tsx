@@ -1,9 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { motion, AnimatePresence } from 'framer-motion'
 const Projects = () => {
-  return (
-    <div className='h-[100vh] w-[100vw] bg-zinc-700'>
-      hello
-    </div>
+ (
+  <div className='flex '>
+ </div>
   )
 }
 export default Projects

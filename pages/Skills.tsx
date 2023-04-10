@@ -38,7 +38,7 @@ const Skills = () => {
           </button>
           </div>
       </div>
-      <div className='flex flex-col justify-baseline  w-[100vw] lg:w-[50vw] p-3 pt-12 '>
+      <div className='flex flex-col justify-baseline  w-[100vw] lg:w-[50vw] p-3  '>
         <div className='flex flex-row align-center justify-center text-white text-4xl lg:p-2 pb-5'>
               Things I'm Good At
         </div>
