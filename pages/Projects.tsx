@@ -1,19 +1,32 @@
-import React from 'react'
+import React, { useState } from 'react'
 import back from '../back.png'
 import front from '../front.png'
 import AI from '../AI.png'
 import Image from 'next/image'
 import ProjectCard from '../components/projectCard'
+import SingleProject from '../components/singleProject'
 type Props = {
   key : Number,
   image: string,
   desc : string,
   Title : string
 }
+
 const projects = ({image,desc,Title}:Props) => {
+  const [open,setOpnen] = useState(false);
+  const openModel = ()=>{
+    setOpnen(true);
+  };
+  const colseModel = ()=>{
+    setOpnen(false);
+  }
   return (
     <div>
-    <ProjectCard image={image} desc={desc} Title={Title}/>
+    <ProjectCard image={image} desc={desc} Title={Title} open={openModel}/>
+    {open && 
+    <div className='fixed top-0 left-0 bg-white h-[100vh] w-[100vw] bg-blur-sm z-[100] bg-opacity-70 backdrop-blur-sm' onClick={colseModel}>
+          <SingleProject image={image} desc={desc} Title={Title} close={colseModel}/>
+    </div>}
     </div>
   )
 }

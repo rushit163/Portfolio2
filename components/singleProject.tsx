@@ -1,15 +1,14 @@
 import React from 'react'
 import Image from 'next/image'
-
 type Props = {
-  open : ()=>void,
-  image: string,
-  desc : string,
-  Title : string
-}
-const ProjectCard = ({image,desc,Title,open}:Props) => {
+    close : ()=>void,
+    image: string,
+    desc : string,
+    Title : string
+  }
+const SingleProject = ({image,desc,Title,close}:Props) => {
   return (
-    <div className='flex flex-col max-w-[320px]  min-h-[380px] rounded-md  p-0 bg-red-100 cursor-pointer' onClick={open}>
+    <div className='flex flex-col max-w-[320px]  min-h-[380px] rounded-md  p-0 bg-red-100 cursor-pointer' onClick={close}>
       <div className='w-full object-cover border-2 border-red-100 rounded-md'>
       <Image src={`/${image}.png`} height={0} width={320} alt='FrontEnd' className='rounded-md'/>
       </div>
@@ -27,4 +26,4 @@ const ProjectCard = ({image,desc,Title,open}:Props) => {
   )
 }
 
-export default ProjectCard
+export default SingleProject
