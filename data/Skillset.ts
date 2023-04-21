@@ -32,7 +32,8 @@ const SETS : Skillsets = [
         desc : "I'm little new to this tech I know python and libraries such as Numpy and started working with Pands and Mathplotlib. I'm really interested in this field and will make a good progress with time.",
         image : "AI",
         Title : 'AI/ML'
-    }
+    },
+    
     
 ]
 

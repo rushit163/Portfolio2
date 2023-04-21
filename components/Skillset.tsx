@@ -11,15 +11,25 @@ type Props = {
 }
 const Skillset = ({image,desc,Title}:Props ) => {
   return ( 
-    <div className='border-2 min-h-[20vh] rounded flex flex-col bg-zinc-600 m-3'>
-        <div className='flex flex-row items-center border-b-2'>
-            <div className='self-start p-2 border-r-2 '><Image src={`/${image}.png`} height={35} width={35} alt='FrontEnd'/></div>
-            <div className='self-center px-2 text-white text-xl'>{Title}</div>
+    <div className='border-2 borderColor bg-white min-h-[20vh] rounded flex flex-col m-3 bg-opacity-50 backdrop-blur-xl bg-slate-700'>
+        <div className='flex flex-row items-center border-b-2 borderColor'>
+            <div className='self-start p-2 border-r-2 borderColor'><Image src={`/${image}.png`} height={35} width={35} alt='FrontEnd'/></div>
+            <div className='self-center  px-2 text-black text-xl'>{Title}</div>
         </div>
-        <div className='text-white text-md p-2'>
+        <div className='text-black text-md p-2'>
           {desc}
         </div>
+        <style jsx>{`
+      .box{
+            background-color: #323131;
+        }
+      .borderColor{
+        border-color: #0057FF;
+      }
+        `}
+      </style>
     </div>
+
   )
 }
 

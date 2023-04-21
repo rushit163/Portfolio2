@@ -9,20 +9,24 @@ type Props = {
 }
 const ProjectCard = ({image,desc,Title,open}:Props) => {
   return (
-    <div className='flex flex-col max-w-[320px]  min-h-[380px] rounded-md  p-0 bg-red-100 cursor-pointer' onClick={open}>
-      <div className='w-full object-cover border-2 border-red-100 rounded-md'>
-      <Image src={`/${image}.png`} height={0} width={320} alt='FrontEnd' className='rounded-md'/>
+    <div className='flex flex-col max-w-[320px] min-h-[380px]  rounded-sm  p-0 bg-red-100 cursor-pointer project hover:border-2 border-red-100 border-0 box-content' onClick={open}>
+      <div className='w-full object-cover '>
+      <Image src={`/${image}.png`} height={0} width={320} alt='FrontEnd' className=''/>
       </div>
-      <div className='text-2xl p-3 '>
-        <a href='google.com' className='text-slate-600 hover:text-black'>{Title}</a>
+      <div className='rounded'>
+      <div className='text-2xl p-3 text-white '>
+        {Title}
       </div>
-      <div className='px-3'>
+      <div className='px-3 text-white hover'>
         {desc.slice(0,100)}......
       </div>
-      <div className='flex px-2 py-3'>
-        <a><Image src={'/Github.png'} height={35} width={35} alt='Github'/></a>
-        <a><Image src={'/link.png'} height={35} width={35} alt='Github' className='mx-3'/></a>
       </div>
+      <style jsx>{`
+      .project{
+            background-color: #0B0B0B;
+        }
+        `}
+      </style>
     </div>
   )
 }

@@ -6,7 +6,7 @@ import { Skillsettype } from '../data/Skillset';
 import Skillset from '../components/Skillset';
 const Skills = () => {
   return (
-    <div className="flex flex-col lg:flex-row justify-baseline align-center  max-h-full min-h-[100vh] w-[100vw] bg-slate-900 pt-12 ">
+    <div className="flex flex-col lg:flex-row justify-baseline align-center  max-h-full min-h-[100vh] w-[100vw] bg-black pt-12 kuchbhi">
       <div className='flex flex-col justify-baseline  w-[100vw] lg:w-[50vw] p-3'>
             <div className='flex flex-row align-center justify-center text-white text-4xl lg:p-2 '>
               About Me
@@ -29,14 +29,7 @@ const Skills = () => {
               I'm also looking forward to learn AI/ML Technology as my next target. 
               </p>
           </div>
-          <div className='mt-3'>
-          <button className="mr-2 bg-transparent hover:bg-slate-700 font-semibold text-white  border border-blue-500 hover:border-transparent rounded px-12 py-2">
-          Projects
-          </button>
-          <button className="bg-transparent hover:bg-slate-700 font-semibold text-white border border-blue-500 hover:border-transparent rounded px-12 py-2">
-          Contact Me
-          </button>
-          </div>
+         
       </div>
       <div className='flex flex-col justify-baseline  w-[100vw] lg:w-[50vw] p-3  '>
         <div className='flex flex-row align-center justify-center text-white text-4xl lg:p-2 pb-5'>
@@ -48,6 +41,12 @@ const Skills = () => {
         })}
           </div>
       </div>
+      <style jsx>{`
+      .kuchbhi{
+            background-color: #131313;
+        }
+        `}
+      </style>
     </div>
   )
 }
