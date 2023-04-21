@@ -20,6 +20,7 @@ module.exports = {
           '0%': { transform: 'translateY(100%)' },
           '100%': { transform: 'translateY(0%)' },
         },
+      
       },
       backgroundImage: {
         'my_bg_image' : "url('../public/background.jpeg')",

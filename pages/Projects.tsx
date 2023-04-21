@@ -21,7 +21,7 @@ const projects = ({image,desc,Title}:Props) => {
     setOpnen(false);
   }
   return (
-    <div className='bf'>
+    <div className='bf pt-5 '>
     <ProjectCard image={image} desc={desc} Title={Title} open={openModel}/>
     {open && 
     <div className='fixed flex flex-row align-center justify-center justify-content-center items-center top-0 left-0 bg-black h-[100vh] w-[100vw] bg-blur-sm z-[100] bg-opacity-70 backdrop-blur-sm' onClick={colseModel}>
