@@ -2,10 +2,11 @@ import React from 'react'
 import Typeeffect from '../components/typeeffect';
 import Typeeffect2 from '../components/typeeffect2';
 import Skilss from '../components/skills';
+import Image from 'next/image';
 const About = () => {
   return (
     <div>
-      <div className="z-0 grid grid-cols-8 gap-4 bg-cover bg-fixed bg-my_bg_image h-[100vh] w-[100vw]">
+      <div className="z-0 grid grid-cols-8 gap-4 bg-cover bg-fixed bg-my_bg_image h-[100vh] w-[100vw]" id='home'>
       <div className='realtive mr-3 col-span-2 md:col-span-2 lg:col-span-1 overflow-y-hidden h-[100vh] '> 
         <Skilss/>
       </div>  
@@ -19,12 +20,10 @@ const About = () => {
           <div className='self-begin flex font-bold text-xl lg:text-5xl md:text-4xl sm:text-2xl text-sky-100'>I'm a&nbsp;<span className='text-red-300 typewritter'>{Typeeffect2()}</span>
           </div>
           <div className='mt-4'>
-          <button className="mr-2 bg-transparent hover:bg-slate-700 text-black font-semibold hover:text-white py-2 px-12 border border-blue-500 hover:border-transparent rounded">
-          Projects
-          </button>
-          <button className="bg-transparent hover:bg-slate-700 text-black font-semibold hover:text-white py-2 px-12 border border-blue-500 hover:border-transparent rounded">
-          Contact Me
-          </button>
+          <a className="flex py-2 flex-row justify-center align-center max-w-[200px] cursor-pointer bg-transparent hover:bg-slate-700 text-black font-semibold hover:text-white border border-blue-500 hover:border-transparent rounded" href='#projects'>
+            <Image src={'/gmail.png'} height={25} width={25} alt="Gmail" className='mr-3'/>
+            <p>Get in touch</p>
+          </a>
           </div>
         </div> 
         </div>

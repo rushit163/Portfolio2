@@ -16,11 +16,11 @@ const Home: NextPage = () => {
       <meta property="og:title" content="My page title" key="title" />
     </Head>
     
-    <div className='overflow-y-hidden'>
+    <div className='overflow-y-hidden scroll-smooth'>
     <Navbar/>
     <About/>
     <Skills/> 
-    <div className='min-w-[100vw] bg-gray-800 flex align-center justify-center text-white text-4xl p-3 bf '>Projects</div>
+    <div className='min-w-[100vw] bg-gray-800 flex align-center justify-center text-white text-4xl p-3 bf ' id='projects'>Projects</div>
     <hr/>
     <div className='min-h-[100vh] w-[100vw] bg-gray-800 p-3 grid xl:grid-cols-4 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 flex align-center justify-center gap-3 bf'>
       {
@@ -30,7 +30,7 @@ const Home: NextPage = () => {
       }
       </div>
     </div>
-    <div className='min-w-[100vw] bg-gray-800 flex align-center justify-center text-white text-4xl p-3 bf'>Experience</div>
+    <div className='min-w-[100vw] bg-gray-800 flex align-center justify-center text-white text-4xl p-3 bf' id='experience'>Experience</div>
     <hr/>
     <div className='scrollbar flex p-3 overflow-x-scroll bf pt-5'><Experience /></div>
     <Footer/>

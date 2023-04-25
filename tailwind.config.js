@@ -23,7 +23,7 @@ module.exports = {
       
       },
       backgroundImage: {
-        'my_bg_image' : "url('../public/background.jpeg')",
+        'my_bg_image' : "url('../public/background.webp')",
       }
     },
   },
