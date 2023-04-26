@@ -9,10 +9,10 @@ const Experience = () => {
       {
       experience.map((exp:experienceType,index)=>{
       return(
-        <div className='pt-7 lefthover'>
+        <div className='pt-7 lefthover' key={index}>
             <article className='flex flex-col items-center content-center relative min-h-[350px] min-w-[400px] max-w-[400px] expcard bg-zinc-800' key={index}>
                 <div className='mt-2' key={index}>
-                    <Image src={`https://res.cloudinary.com/dtaablkf5/image/upload/w_220,h_200,c_fill,q_100/gbmugfku5irx95ahwzlk.jpg`} width={50} height={50} alt='logo'/>
+                    <Image src={`${exp.img}`} width={50} height={50} alt='logo'/>
                 </div>
                 <div className='mt-2 text-white text-2xl' key={index}>
                     {exp.title}
@@ -20,10 +20,10 @@ const Experience = () => {
                 <div className='text-white text-lg' key={index}>
                     {exp.timeline}
                 </div> 
-                <ol className='mt-3 px-6 text-white text-lg list-disc'>
-                    {exp.decriptio.map((des)=>{
+                <ol className='mt-3 px-6 text-white text-lg list-disc' key={index}>
+                    {exp.decriptio.map((des,index)=>{
                         return(
-                            <li>{des}</li>
+                            <li key={index}>{des}</li>
                         )
                     })}
                 </ol>    

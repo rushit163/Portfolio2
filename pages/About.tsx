@@ -20,7 +20,7 @@ const About = () => {
           <div className='self-begin flex font-bold text-xl lg:text-5xl md:text-4xl sm:text-2xl text-sky-100'>I'm a&nbsp;<span className='text-red-300 typewritter'>{Typeeffect2()}</span>
           </div>
           <div className='mt-4'>
-          <a className="flex py-2 flex-row justify-center align-center max-w-[200px] cursor-pointer bg-transparent hover:bg-slate-700 text-black font-semibold hover:text-white border border-blue-500 hover:border-transparent rounded" href='#projects'>
+          <a className="flex py-2 flex-row justify-center align-center max-w-[200px] cursor-pointer bg-transparent hover:bg-slate-700 text-black font-semibold hover:text-white border border-blue-500 hover:border-transparent rounded" href='#footer'>
             <Image src={'/gmail.png'} height={25} width={25} alt="Gmail" className='mr-3'/>
             <p>Get in touch</p>
           </a>

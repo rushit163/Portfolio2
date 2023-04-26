@@ -9,10 +9,12 @@ type Props = {
   key : Number,
   image: string,
   desc : string,
-  Title : string
+  Title : string,
+  github: string,
+  Link : string
 }
 
-const projects = ({image,desc,Title}:Props) => {
+const projects = ({github,Link,image,desc,Title}:Props) => {
   const [open,setOpnen] = useState(false);
   const openModel = ()=>{
     setOpnen(true);
@@ -25,9 +27,8 @@ const projects = ({image,desc,Title}:Props) => {
     <ProjectCard image={image} desc={desc} Title={Title} open={openModel}/>
     {open && 
     <div className='fixed flex flex-row align-center justify-center justify-content-center items-center top-0 left-0 bg-black h-[100vh] w-[100vw] bg-blur-sm z-[100] bg-opacity-70 backdrop-blur-sm' onClick={colseModel}>
-          <SingleProject image={image} desc={desc} Title={Title} close={colseModel}/>
+          <SingleProject image={image} desc={desc} Title={Title} close={colseModel} github={github} Link = {Link}/>
     </div>}
-    
     </div>
   )
 }

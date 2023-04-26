@@ -2,20 +2,23 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <footer className="footer py-4 h-[75px]">
-  <div className="container mx-auto flex justify-between items-center">
-    <a className="text-white  text-md cursor-pointer" href='rushitpatel163@gmail.com'>
+    <footer className="footer py-4" id='footer'>
+  <div className="container mx-auto flex lg:flex-row xl:flex-row md:flex.row flex-col justify-between items-center">
+    <div className='flex flex-col'>
+      <a  href='mailto:rushitpatel163@gmail.com' className='text-lg font-semibold'>Contact Me</a>
+    <a className="text-white  text-sm cursor-pointer" href='mailto:rushitpatel163@gmail.com'>
       rushitpatel163@gmail.com
     </a>
+    </div>
     <div>
-      <a href="#about" className="text-black text-xl mx-4 hover:text-slate-100">
-        About Me
+      <a href="https://github.com/rushit163" className=" lg:text-xl text-md xl:text-xl  md:text.xl  text-black text-xl mx-4 hover:text-slate-100">
+        github
       </a>
-      <a href="#home" className="text-black text-xl mx-4 hover:text-slate-100">
-        Home
+      <a href="https://www.linkedin.com/in/rushit-patel-61382b156/" className="  lg:text-xl text-md xl:text-xl md:text.xl  text-black text-xl mx-4 hover:text-slate-100">
+        linkedIn
       </a>
-      <a href="#projects" className="text-black text-xl mx-4 hover:text-slate-100">
-        Projects
+      <a href="https://www.instagram.com/rushit__163/" className=" lg:text-xl text-md xl:text-xl  md:text.xl  text-black text-xl mx-4 hover:text-slate-100">
+        Instagram
       </a>
       
     </div>
