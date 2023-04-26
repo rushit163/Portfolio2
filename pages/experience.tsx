@@ -9,7 +9,7 @@ const Experience = () => {
       {
       experience.map((exp:experienceType,index)=>{
       return(
-        <div className='pt-7 lefthover' key={index}>
+        <div className='pt-7 lefthover rounded mb-5' key={index}>
             <article className='flex flex-col items-center content-center relative min-h-[350px] min-w-[400px] max-w-[400px] expcard bg-zinc-800' key={index}>
                 <div className='mt-2' key={index}>
                     <Image src={`${exp.img}`} width={50} height={50} alt='logo'/>
