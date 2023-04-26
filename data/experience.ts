@@ -14,7 +14,7 @@ const experience : experinceSet = [
         title : 'IEEE SRMIST',
         timeline : 'Mar 2022 - Present Day',
         job : 'Technical Lead',
-        img : 'IEEElogo',
+        img : "https://res.cloudinary.com/dtaablkf5/image/upload/w_200,h_200,c_fill,q_100/f3iae4qf8eqbbdhbmjzy.jpg",
         decriptio : [
             'Member at web and app development domain',
             'Technical Lead at COMSOC domain at IEEE Technical domain'
@@ -25,7 +25,7 @@ const experience : experinceSet = [
         title : 'Origin Tech',
         timeline : 'Mar 2023 - Apr 2023',
         job : 'Internship',
-        img : 'origin',
+        img : 'https://res.cloudinary.com/dtaablkf5/image/upload/w_220,h_200,c_fill,q_100/gbmugfku5irx95ahwzlk.jpg',
         decriptio : [
             'Internship Program attended as a IOT developer'
         ]

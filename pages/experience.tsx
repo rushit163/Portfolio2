@@ -12,7 +12,7 @@ const Experience = () => {
         <div className='pt-7 lefthover'>
             <article className='flex flex-col items-center content-center relative min-h-[350px] min-w-[400px] max-w-[400px] expcard bg-zinc-800' key={index}>
                 <div className='mt-2' key={index}>
-                    <Image src={`/${exp.img}.png`} width={50} height={50} alt='logo'/>
+                    <Image src={`https://res.cloudinary.com/dtaablkf5/image/upload/w_220,h_200,c_fill,q_100/gbmugfku5irx95ahwzlk.jpg`} width={50} height={50} alt='logo'/>
                 </div>
                 <div className='mt-2 text-white text-2xl' key={index}>
                     {exp.title}

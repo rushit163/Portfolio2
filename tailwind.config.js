@@ -23,7 +23,7 @@ module.exports = {
       
       },
       backgroundImage: {
-        'my_bg_image' : "url('../public/background.webp')",
+        'my_bg_image' : "url('https://res.cloudinary.com/dtaablkf5/image/upload/v1682431872/ofloe8pwjzbowfkyumzt.webp')",
       }
     },
   },

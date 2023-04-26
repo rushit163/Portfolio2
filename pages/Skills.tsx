@@ -16,7 +16,7 @@ const Skills = () => {
           <div className='flex flex-row align-center justify-center'>
             <div className='mt-2'>
             <Image
-              src={me}
+              src={"https://res.cloudinary.com/dtaablkf5/image/upload/q_50/rq28bfryvktortytgu8w.jpg"}
               height={250}
               width={250}
               alt = "My pic"
