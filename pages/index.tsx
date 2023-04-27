@@ -25,7 +25,7 @@ const Home: NextPage = () => {
     <div className='min-h-[100vh] w-[100vw] bg-gray-800 p-3 grid xl:grid-cols-4 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 flex align-center justify-center gap-3 bf'>
       {
         myProjects.map((project:projectType,index)=>{
-          return(<Projects image={project.image}  desc={project.desc} Title={project.Title} key={index} github={project.github} Link = {project.Link}/>)
+          return(<Projects image={project.image}  desc={project.desc} Title={project.Title} key={index} github={project.github} Link = {project.Link} shortdesc={project.shortdesc}/>)
         })
       }
       </div>

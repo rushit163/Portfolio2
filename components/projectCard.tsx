@@ -4,13 +4,13 @@ import Image from 'next/image'
 type Props = {
   open : ()=>void,
   image: string,
-  desc : string,
+  shortdesc : string,
   Title : string
 }
-const ProjectCard = ({image,desc,Title,open}:Props) => {
+const ProjectCard = ({image,shortdesc,Title,open}:Props) => {
   return (
     <div className='flex flex-col max-w-[320px] min-h-[380px]  rounded-sm cursor-pointer bg-white bg-opacity-60 hover:bg-opacity-100' onClick={open}>
-      <div className='w-full object-cover '>
+      <div className='w-full object-cover'>
       <Image src={image} height={0} width={320} alt='FrontEnd' className=''/>
       </div>
       <div className='rounded'>
@@ -18,7 +18,7 @@ const ProjectCard = ({image,desc,Title,open}:Props) => {
         {Title}
       </div>
       <div className='px-3 text-black hover'>
-        {desc.slice(0,100)}......
+        {shortdesc}.....
       </div>
       </div>
       <style jsx>{`

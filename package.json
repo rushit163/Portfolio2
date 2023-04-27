@@ -3,7 +3,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "license": "UNLICENSED"
   },
   "dependencies": {
     "@react-spring/parallax": "^9.7.1",
